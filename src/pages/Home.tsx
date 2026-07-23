@@ -19,6 +19,8 @@ type HomeProps = {
 };
 
 function Home({ onNavigate }: HomeProps) {
+  const baseUrl = import.meta.env.BASE_URL;
+
   const carouselItems: CarouselItem[] = [
     {
       text: "Guess the Drawing",
@@ -51,8 +53,8 @@ function Home({ onNavigate }: HomeProps) {
         </p> */}
 
         <div className="d-flex gap-3">
-          <Button href="/playon-website/#resume">Resume</Button>
-          <Button href="/playon-website/#about-me">About Me</Button>
+          <Button href={`${baseUrl}#resume`}>Resume</Button>
+          <Button href={`${baseUrl}#about-me`}>About Me</Button>
         </div>
       </main>
 
