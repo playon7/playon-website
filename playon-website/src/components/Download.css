@@ -1,0 +1,61 @@
+.download-component {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.split-btn-group {
+    display: flex;
+    align-items: stretch;
+    border-radius: 999px;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.split-btn-group:hover {
+    transform: translateY(-2px);
+}
+
+.split-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 180ms ease, filter 180ms ease;
+}
+
+/* Main Text Button (Left) */
+.split-btn-main {
+    padding: 0.75rem 1.75rem;
+    color: #fff;
+    background: linear-gradient(135deg, var(--space-rose), var(--space-lavender));
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2); /* Subtle divider */
+}
+
+.split-btn-main:hover,
+.split-btn-main:focus-visible {
+    color: #fff;
+    filter: brightness(1.1);
+}
+
+/* Download Icon Button (Right) */
+.split-btn-icon {
+    padding: 0.75rem 1.25rem;
+    color: #fff;
+    background: linear-gradient(135deg, var(--space-lavender), #a395ff);
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+}
+
+.split-btn-icon:hover,
+.split-btn-icon:focus-visible {
+    color: #fff;
+    filter: brightness(1.1);
+}
+
+/* Ensure SVG icon aligns perfectly */
+.split-btn-icon svg {
+    display: block;
+}

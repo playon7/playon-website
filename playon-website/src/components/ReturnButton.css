@@ -1,0 +1,54 @@
+/* Pins the button to the top left of the viewport. 
+  Adjust the top value if it overlaps with your navbar. 
+*/
+.return-button {
+    position: fixed;
+    top: 6rem;
+    left: 2rem;
+    z-index: 1050;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    
+    color: var(--space-blush);
+    background-color: var(--space-surface);
+    border: 1px solid var(--space-border);
+    border-radius: 50%;
+    backdrop-filter: blur(12px);
+    
+    cursor: pointer;
+    transition: 
+        transform 200ms ease, 
+        background-color 200ms ease, 
+        border-color 200ms ease, 
+        box-shadow 200ms ease,
+        color 200ms ease;
+}
+
+.return-button:hover,
+.return-button:focus-visible {
+    transform: scale(1.05);
+    background-color: rgba(130, 19, 173, 0.2);
+    border-color: rgba(147, 129, 255, 0.5);
+    color: #fff;
+    outline: none;
+}
+
+/* Ensure the SVG icon scales nicely */
+.return-button svg {
+    transition: transform 200ms ease;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 767.98px) {
+    .return-button {
+        top: 5rem; /* Pushed down for mobile as well */
+        left: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}

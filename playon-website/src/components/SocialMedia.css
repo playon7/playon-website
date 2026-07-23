@@ -1,0 +1,31 @@
+/* Container spacing - increasing the gap between icons */
+.social-media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 0;
+}
+
+.social-icon-link {
+    color: var(--space-muted);
+    font-size: 2.75rem;
+    display: inline-flex; 
+    transition: transform 250ms ease, filter 250ms ease;
+}
+
+.social-icon-link svg {
+    transition: fill 250ms ease, transform 250ms ease;
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus-visible {
+    transform: translateY(-6px) scale(1.1);
+    outline: none;
+}
+
+.social-icon-link:hover svg,
+.social-icon-link:focus-visible svg {
+    fill: url(#space-gradient);
+    color: var(--space-rose);
+}

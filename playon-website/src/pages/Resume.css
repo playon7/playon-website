@@ -1,0 +1,207 @@
+.resume-page {
+    padding: 4rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.resume-header .hero-title {
+    margin-bottom: 1rem;
+}
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+@media (min-width: 992px) {
+    .resume-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.resume-section {
+    margin-bottom: 3rem;
+}
+
+.resume-section-title {
+    color: var(--space-lavender);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.resume-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--space-rose), var(--space-lavender));
+    border-radius: 99px;
+}
+
+.resume-section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.resume-card,
+.skills-container,
+.courses-container {
+    background-color: var(--space-surface);
+    border: 1px solid var(--space-border);
+    padding: 2rem;
+    transition: transform 260ms ease, box-shadow 260ms ease, border-color 260ms ease;
+    backdrop-filter: blur(12px);
+}
+
+.resume-card:hover,
+.skills-container:hover,
+.courses-container:hover {
+    border-color: rgba(147, 129, 255, 0.4);
+    background-color: var(--space-surface-strong)
+}
+
+.resume-card-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    gap: 0.5rem;
+}
+
+@media (min-width: 576px) {
+    .resume-card-header {
+        flex-direction: row;
+        align-items: flex-start; 
+        gap: 1.5rem;
+    }
+}
+
+.resume-card-title {
+    color: var(--space-blush);
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.resume-card-date {
+    color: var(--space-rose);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 576px) {
+    .resume-card-date {
+        margin-top: 0;
+    }
+}
+
+.resume-card-subtitle {
+    color: var(--space-lavender);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.resume-card-desc {
+    color: var(--space-muted);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.resume-card-bullets {
+    color: var(--space-text);
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    line-height: 1.6;
+}
+
+.resume-card-bullets li {
+    margin-bottom: 0.5rem;
+}
+
+.resume-card-bullets li::marker {
+    color: var(--space-rose);
+}
+
+.resume-card-detail {
+    color: var(--space-muted);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.resume-card-detail strong {
+    color: var(--space-blush);
+    font-weight: 600;
+}
+
+.resume-card-detail:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.skill-group {
+    margin-bottom: 1.5rem;
+}
+
+.skill-group:last-child {
+    margin-bottom: 0;
+}
+
+.skill-group-title {
+    color: var(--space-blush);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.skill-badge-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.skill-badge {
+    background: rgba(147, 129, 255, 0.12);
+    border: 1px solid var(--space-border);
+    color: var(--space-text);
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    transition: background-color 200ms ease, color 200ms ease;
+}
+.resume-divider {
+    border: none;
+    height: 3px;
+    background: linear-gradient(90deg, var(--space-rose), var(--space-lavender));
+    border-radius: 99px;
+    margin: 3rem 0 2rem 0;
+    opacity: 0.8;
+}
+
+.download-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+    padding: 1rem;
+}
+
+.download-section .display-5 {
+    color: var(--space-text);
+    margin-bottom: 0.5rem;
+}

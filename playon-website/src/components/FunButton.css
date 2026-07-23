@@ -1,0 +1,49 @@
+.fun-button {
+	position: relative;
+	filter: brightness(1) saturate(1);
+	transition:
+		transform 220ms ease,
+		box-shadow 220ms ease,
+		filter 650ms ease;
+}
+
+.fun-button:hover,
+.fun-button:focus-visible {
+	transform: translateY(-8px);
+	filter: brightness(1.08) saturate(1.1);
+	box-shadow: 0 22px 44px rgba(22, 10, 24, 0.42);
+}
+
+.fun-button:hover .text-white,
+.fun-button:focus-visible .text-white {
+	color: #fff6ff !important;
+}
+
+.fun-button__layer {
+	position: absolute;
+	inset: 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: opacity 650ms ease, filter 650ms ease;
+}
+
+.fun-button__layer--base {
+	opacity: 1;
+	filter: brightness(0.92) saturate(0.95);
+}
+
+.fun-button__layer--hover {
+	opacity: 0;
+	filter: brightness(1.1) saturate(1.12);
+}
+
+.fun-button:hover .fun-button__layer--base,
+.fun-button:focus-visible .fun-button__layer--base {
+	opacity: 1;
+}
+
+.fun-button:hover .fun-button__layer--hover,
+.fun-button:focus-visible .fun-button__layer--hover {
+	opacity: 1;
+}
