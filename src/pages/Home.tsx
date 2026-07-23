@@ -51,8 +51,8 @@ function Home({ onNavigate }: HomeProps) {
         </p> */}
 
         <div className="d-flex gap-3">
-          <Button href="/#resume">Resume</Button>
-          <Button href="/#about-me">About Me</Button>
+          <Button href="/playon-website/#resume">Resume</Button>
+          <Button href="/playon-website/#about-me">About Me</Button>
         </div>
       </main>
 
