@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter basename="/playon-website">
+    <BrowserRouter basename="/playon-website/">
       <App />
     </BrowserRouter>
   </StrictMode>,
