@@ -325,7 +325,7 @@ const Resume: React.FC = () => {
           </p>
 
           <Download
-            fileUrl="/Resume.pdf"
+            fileUrl="/playon-website/Resume.pdf"
             fileName="Gui Resume.pdf"
             buttonText="Open Resume"
           />
