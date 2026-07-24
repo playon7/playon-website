@@ -24,7 +24,7 @@ interface SkillCategory {
 const educationData: ResumeItemData[] = [
   {
     id: 1,
-    title: "Bachelor of Science in Mathematics",
+    title: "Bachelor of Science in Mathematics, Major in Computer Science",
     subtitle: "Carnegie Mellon University",
     date: "August 2025 - May 2029",
     gpa: "3.88/4.0",
@@ -152,6 +152,20 @@ const awardsData: ResumeItemData[] = [
     date: "August 2021 - July 2025",
     description:
       "Received 44 'Top 5' awards in various Mu Alpha Theta and FAMAT mathematics competitions over the course of four years.",
+  },
+  {
+    id: 3,
+    title: "3x AIME Qualifier",
+    date: "November 2022 - February 2025",
+    description:
+      "Qualified for the American Invitational Mathematics Examination in 2023, 2024, and 2025. Qualified with Distinction in 2023. Best score of 7 in 2025.",
+  },
+  {
+    id: 4,
+    title: "UCF High School Programming Tournament Top 5",
+    date: "March 2025",
+    description:
+      "Awarded for achieving a top 5 placement in the UCF High School Programming Tournament in a team of 3.",
   },
 ];
 

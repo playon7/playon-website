@@ -19,7 +19,7 @@ function Contact() {
             </p>
 
             <p className="lead text-secondary mb-4 pe-4">
-              I love playing video games, watching anime, and eating great food.
+              I love playing video games, watching anime, and all things food.
               On my Instagram, I post my Geometry Dash completions, with my
               hardest being the Extreme Demon Cataclysm!
             </p>
