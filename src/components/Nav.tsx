@@ -1,3 +1,5 @@
+import { useState } from "react"; // 1. Import useState
+
 type NavPage = "home" | "resume" | "projects" | "about-me" | "fun";
 
 type NavProps = {
@@ -13,6 +15,8 @@ const navItems: Array<{ label: string; page: NavPage }> = [
 ];
 
 function Nav({ activePage }: NavProps) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
       <div className="container py-1">
@@ -23,16 +27,17 @@ function Nav({ activePage }: NavProps) {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#siteNav"
-          aria-controls="siteNav"
-          aria-expanded="false"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-expanded={isMenuOpen}
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon" />
         </button>
 
-        <div className="collapse navbar-collapse" id="siteNav">
+        <div
+          className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
+          id="siteNav"
+        >
           <ul className="navbar-nav mb-2 mb-lg-0 gap-lg-2">
             {navItems.map((item) => (
               <li className="nav-item" key={item.page}>
@@ -44,6 +49,7 @@ function Nav({ activePage }: NavProps) {
                   }`}
                   aria-current={activePage === item.page ? "page" : undefined}
                   href={`#${item.page}`}
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
                 </a>

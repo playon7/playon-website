@@ -67,3 +67,10 @@
     background-position: 100% 50%;
   }
 }
+
+@media (max-width: 767.98px) {
+  .custom-btn {
+    padding: 0.75rem 2rem;
+    font-size: 1.25rem;
+  }
+}
