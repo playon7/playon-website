@@ -141,6 +141,31 @@ a:hover {
 	box-shadow: none;
 }
 
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: rgba(38, 18, 39, 0.95);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(147, 129, 255, 0.2);
+        border-radius: 1.25rem;
+        padding: 1rem;
+        margin-top: 1rem;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 0.5rem;
+    }
+    
+    .navbar-nav .nav-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .navbar .nav-link {
+        text-align: center;
+        padding: 0.85rem 1rem !important;
+        border-radius: 999px;
+    }
+}
+
 .container {
 	position: relative;
 	z-index: 1;

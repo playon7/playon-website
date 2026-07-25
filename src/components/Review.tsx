@@ -156,36 +156,32 @@ const Review: React.FC<ReviewProps> = ({
     >
       {/* COLLAPSED VIEW */}
       {!isExpanded && (
-        <div className="review-header d-flex align-items-center p-3 animate-fade-in w-100">
-          <div
-            className="d-flex align-items-center pe-3"
-            style={{ flex: "0 0 50%" }}
-          >
+        <div className="review-header row m-0 p-3 animate-fade-in w-100 align-items-center">
+          {/* Left Side: Image and Title */}
+          <div className="col-12 col-lg-6 d-flex align-items-center mb-3 mb-lg-0 pe-lg-3 pl-0">
             <img
               src={imageUrl}
               alt={`${title}`}
               className="image-collapsed flex-shrink-0"
             />
+
             <div className="review-text-area p-2 px-3 rounded-4 bg-dark border ms-3">
               <h3
-                className="review-title-collapsed m-0 text-wrap text-break d-flex align-items-center text-start"
-                style={{ minHeight: "4rem", lineHeight: "1.2" }}
+                className="review-title-collapsed m-0 text-wrap text-break d-flex align-items-center justify-content-center text-center"
+                style={{ minHeight: "3rem", lineHeight: "1.2" }}
               >
                 {title}
               </h3>
             </div>
           </div>
 
-          <div
-            className="d-flex align-items-center pe-2"
-            style={{ flex: "0 0 50%" }}
-          >
+          {/* Right Side: Score and Bar */}
+          <div className="col-12 col-lg-6 d-flex align-items-center ps-lg-3 pe-0">
             <div
               style={{
                 display: "flex",
                 alignItems: "baseline",
-                minWidth: "95px",
-
+                minWidth: "85px",
                 background: overallBarColor,
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
@@ -194,8 +190,8 @@ const Review: React.FC<ReviewProps> = ({
               }}
             >
               <span
+                className="score-number-collapsed"
                 style={{
-                  fontSize: "2.8rem",
                   fontWeight: "700",
                   lineHeight: "0.8",
                   letterSpacing: "-2px",
@@ -233,7 +229,6 @@ const Review: React.FC<ReviewProps> = ({
           </div>
         </div>
       )}
-
       {/* EXPANDED DETAILS VIEW */}
       {isExpanded && (
         <div className="review-details p-4 animate-fade-in">
