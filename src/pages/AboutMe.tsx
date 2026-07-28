@@ -1,7 +1,7 @@
 import guiImage from "../assets/gui.jpg";
 import SocialMedia from "../components/SocialMedia";
 
-function Contact() {
+function AboutMe() {
   return (
     <>
       <main className="container pt-5 pb-4">
@@ -19,18 +19,6 @@ function Contact() {
             </p>
 
             <p className="lead text-secondary mb-4 pe-4">
-              I love playing video games, watching anime, and all things food.
-              On my Instagram, I post my Geometry Dash completions, with my
-              hardest being the Extreme Demon Cataclysm!
-            </p>
-
-            <p className="lead text-secondary mb-4 pe-4">
-              My favorite anime are 【Oshi no Ko】, Kaguya-sama: Love is War,
-              and Code Geass. I love talking about shows I've watched, so feel
-              free to reach out!
-            </p>
-
-            <p className="lead text-secondary mb-4 pe-4">
               At heart, I am a math competitor, participating in events like
               AMC, AIME, Mu Alpha Theta, FAMAT, and CMIMC. Aside from the
               accolades I have received, I've also written tests for classmates
@@ -43,6 +31,18 @@ function Contact() {
               machine learning, back-end API development, and image processing.
               A large reason for hosting this site is to let me show off some of
               these things I've made.
+            </p>
+
+            <p className="lead text-secondary mb-4 pe-4">
+              I love playing video games, watching anime, and all things food.
+              On my Instagram, I post my Geometry Dash completions, with my
+              hardest being the Extreme Demon "Cataclysm"!
+            </p>
+
+            <p className="lead text-secondary mb-4 pe-4">
+              My favorite anime are 【Oshi no Ko】, Kaguya-sama: Love is War,
+              and Code Geass. I love talking about shows I've watched, so feel
+              free to reach out!
             </p>
           </div>
 
@@ -63,4 +63,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default AboutMe;

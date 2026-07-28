@@ -45,7 +45,7 @@ const educationData: ResumeItemData[] = [
       "Machine Learning & AI",
       "Differential Equations",
       "Linear Algebra",
-      "AP Statistics",
+      "AP Statistics Competition",
     ],
     activities: [
       "Computer Science Honor Society (President)",
@@ -95,7 +95,7 @@ const projectsData: ResumeItemData[] = [
     id: 1,
     title: "Brief.ly",
     subtitle: "Application, Hackathon Submission",
-    date: "November 2024",
+    date: "November 2025",
     bullets: [
       <>
         Developed a GPT-based summarization module to convert scraped news
@@ -155,23 +155,23 @@ const awardsData: ResumeItemData[] = [
   },
   {
     id: 3,
-    title: "3x AIME Qualifier",
-    date: "November 2022 - February 2025",
-    description:
-      "Qualified for the American Invitational Mathematics Examination in 2023, 2024, and 2025. Qualified with Distinction in 2023. Best score of 7 in 2025.",
-  },
-  {
-    id: 4,
     title: "UCF High School Programming Tournament Top 5",
     date: "March 2025",
     description:
       "Awarded for achieving a top 5 placement in the UCF High School Programming Tournament in a team of 3.",
   },
+  {
+    id: 4,
+    title: "3x AIME Qualifier",
+    date: "November 2022 - February 2025",
+    description:
+      "Qualified for the American Invitational Mathematics Examination in 2023, 2024, and 2025. Qualified with Distinction in 2023. Best score of 7 in 2025.",
+  },
 ];
 
 const skillsData: SkillCategory[] = [
   {
-    category: "Languages",
+    category: "Spoken Languages",
     skills: ["English", "Portuguese", "French"],
   },
   {
@@ -187,6 +187,7 @@ const skillsData: SkillCategory[] = [
       "TensorFlow",
       "Git",
       "Microsoft Azure",
+      "VS Code",
     ],
   },
 ];

@@ -101,7 +101,7 @@ a:hover {
 .hero-title {
 	font-family: 'Figtree', sans-serif;
     color: var(--space-rose);
-    font-size: clamp(3rem, 10vw + 1rem, 12rem);
+    font-size: clamp(5rem, 10vw + 1rem, 12rem);
     font-weight: 900;
     letter-spacing: -0.04em; 
     line-height: 1;

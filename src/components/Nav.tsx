@@ -1,4 +1,4 @@
-import { useState } from "react"; // 1. Import useState
+import { useState } from "react";
 
 type NavPage = "home" | "resume" | "projects" | "about-me" | "fun";
 

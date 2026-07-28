@@ -8,12 +8,14 @@ import AnimeReviews from "./pages/AnimeReviews";
 import GameReviews from "./pages/GameReviews";
 import Resume from "./pages/Resume";
 import AboutMe from "./pages/AboutMe";
+import Tests from "./pages/Tests";
 import Footer from "./components/Footer";
 
 const ROUTES = {
   home: { Component: Home, navKey: "home" },
   projects: { Component: Projects, navKey: "projects" },
   project1: { Component: Project1, navKey: "projects" },
+  tests: { Component: Tests, navKey: "projects" },
   fun: { Component: Fun, navKey: "fun" },
   "anime-reviews": { Component: AnimeReviews, navKey: "fun" },
   "game-reviews": { Component: GameReviews, navKey: "fun" },

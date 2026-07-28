@@ -1,4 +1,5 @@
 import project1 from "../assets/project1.png";
+import tests from "../assets/mao.png";
 import ProjectsButton from "../components/ProjectsButton";
 
 type ProjectsProps = {
@@ -13,24 +14,13 @@ const projectButtons = [
     image: project1,
     to: "project1",
   },
-  // {
-  //   title: "Project Two",
-  //   description: "Use this card for a second project or case study highlight.",
-  //   image: placeholder2Image,
-  //   to: "home",
-  // },
-  // {
-  //   title: "Project Three",
-  //   description: "This card can have anything I want it to have.",
-  //   image: placeholderImage,
-  //   to: "home",
-  // },
-  // {
-  //   title: "Project Four",
-  //   description: "This fourth example completes the two-row layout for now.",
-  //   image: placeholder2Image,
-  //   to: "home",
-  // },
+  {
+    title: "Math Comp Tests",
+    description:
+      "A set of math competition tests, written for either competitions or practice sessions, made by me.",
+    image: tests,
+    to: "tests",
+  },
 ] as const;
 
 function Projects({ onNavigate }: ProjectsProps) {

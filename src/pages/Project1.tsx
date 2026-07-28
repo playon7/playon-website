@@ -1,6 +1,9 @@
+import ReturnButton from "../components/ReturnButton";
+
 function Project1() {
   return (
     <>
+      <ReturnButton />
       <main className="container pt-5 pb-4">
         <div className="col-lg-7">
           <p className="text-uppercase text-primary fw-semibold mb-2">
