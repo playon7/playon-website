@@ -1,4 +1,4 @@
-type NavPage = "home" | "project1";
+type NavPage = "home" | "project1" | "tests";
 
 type ProjectsButtonProps = {
   title: string;
