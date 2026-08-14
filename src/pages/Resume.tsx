@@ -64,13 +64,19 @@ const experienceData: ResumeItemData[] = [
     date: "May 2026 - July 2026",
     bullets: [
       <>
-        Remote research on the Theory of Computation using Raymond Smullyan's
+        Conducted research on the Theory of Computation using Raymond Smullyan's
         book <i>To Mock a Mockingbird</i> under the guidance of Professor
-        Richard Statman.
+        Richard Statman
       </>,
       <>
-        Creating intermediary proofs to show that we cannot find a Sage bird
-        with song birds <i>B</i>, <i>I</i>, and <i>M</i>.
+        Learned and experimented with songbirds, a theoretical language used by
+        Smullyan to explore the theory of computation.
+      </>,
+      <>
+        Created intermediary proofs to show that we cannot find a fixed-point
+        combinator (Sage bird) using songbirds <i>B</i>, <i>I</i>, and <i>M</i>,
+        establishing the inability to construct songbirds <i>T</i> and <i>K</i>{" "}
+        in a restricted environment.
       </>,
     ],
   },
